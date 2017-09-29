@@ -6,26 +6,36 @@ const notify = require('gulp-notify');
 const babel = require('gulp-babel');
 
 
-gulp.task('minifycss', function(){
+gulp.task('minifycss', function() {
 	return gulp.src('./src/css/popup.css')
-	.pipe(minifycss())
-	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('./dist/css'))
-	.pipe(notify({message: 'minify css done.'}));
+		.pipe(minifycss())
+		.pipe(rename({
+			suffix: '.min'
+		}))
+		.pipe(gulp.dest('./dist/css'))
+		.pipe(notify({
+			message: 'minify css done.'
+		}));
 });
 
 
 
-gulp.task('minifyjs', function(){
+gulp.task('minifyjs', function() {
 	return gulp.src('./src/js/popup.js')
-	.pipe(babel({presets: ['es2015']}))
-	.pipe(uglify())
-	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('./dist/js'))
-	.pipe(notify({message: 'minify popupjs done.'}));
+		.pipe(babel({
+			presets: ['env']
+		}))
+		.pipe(uglify())
+		.pipe(rename({
+			suffix: '.min'
+		}))
+		.pipe(gulp.dest('./dist/js'))
+		.pipe(notify({
+			message: 'minify popupjs done.'
+		}));
 });
 
 
-gulp.task('default', function(){
+gulp.task('default', function() {
 	gulp.start('minifycss', 'minifyjs');
 });

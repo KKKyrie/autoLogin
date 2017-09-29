@@ -1,14 +1,14 @@
 {
-  "name": "juzi-auto-login-chrome-plugin",
+  "name": "auto-login-chrome-extension",
   "version": "1.0.0",
-  "description": "a chrome\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[Cplugin allows all juzi developers to login their account without typing the keyboard.",
+  "description": "An auto-login chrome extension from website",
   "main": "popup.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KKKyrie/juziLogin.git"
+    "url": "git+https://github.com/KKKyrie/autoLogin.git"
   },
   "keywords": [
     "chrome",
@@ -19,11 +19,12 @@
   "author": "kyrieliu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KKKyrie/juziLogin/issues"
+    "url": "https://github.com/KKKyrie/autoLogin/issues"
   },
-  "homepage": "https://github.com/KKKyrie/juziLogin#readme",
+  "homepage": "https://github.com/KKKyrie/autoLogin#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-preset-env": "^2.0.0-beta.2",
     "babel-preset-es2015": "^6.24.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
