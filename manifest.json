@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "autoLogin",
+	"version": "1.0",
+	"description": "网站自动登录插件",
+	"icons": {
+
+	},
+
+	"browser_action": {
+		"default_icon": {
+			"19": "images/logo.png",
+			"38": "images/logo.png"
+		},
+		"default_title": "快速登录各种网站",
+		"default_popup": "popup.html"
+	},
+
+	"content_scripts": [{
+			"matches": ["*://segmentfault.com/*"],
+			"js": ["./src/content_scripts/sf.js"]
+		},
+
+		{
+			"matches": ["*://github.com/login"],
+			"js": ["./src/content_scripts/github.js"]
+		}
+	],
+
+	"background": {
+		"scripts": []
+	}
+}

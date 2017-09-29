@@ -1,0 +1,36 @@
+{
+  "name": "juzi-auto-login-chrome-plugin",
+  "version": "1.0.0",
+  "description": "a chrome\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[Cplugin allows all juzi developers to login their account without typing the keyboard.",
+  "main": "popup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KKKyrie/juziLogin.git"
+  },
+  "keywords": [
+    "chrome",
+    "plugin",
+    "auto",
+    "login"
+  ],
+  "author": "kyrieliu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KKKyrie/juziLogin/issues"
+  },
+  "homepage": "https://github.com/KKKyrie/juziLogin#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifyjs": "^0.6.2"
+  }
+}

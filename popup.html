@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="./src/css/popup.css">
+	</head>
+
+	<body>
+		<div class="container" id="container">
+
+			<div class="button-area">
+
+
+				<div class="account-btn-area" id="accountBtnArea">
+
+				</div>
+
+				<div class="button-row">
+					<button class="account-btn add-btn" id="showAddBtn"><i class="fa fa-plus"></i>&nbsp;添加帐号</button>
+				</div>
+			</div>
+
+			<div class="add-area">
+
+				<div class="add-contianer">
+
+					<div class="add-container-row">
+						<label for="accountName"><i class="fa fa-paw"></i>&nbsp;名称：</label>
+						<input type="text" name="accountName" id="accountName" />
+					</div>
+
+					<div class="add-container-row">
+						<label for="account"><i class="fa fa-edit"></i>&nbsp;帐号：</label>
+						<input type="text" name="account" id="account" />
+					</div>
+
+					<div class="add-container-row">
+						<label for="password"><i class="fa fa-send"></i>&nbsp;密码：</label>
+						<input type="password" name="password" id="password" />
+					</div>
+
+					<div class="add-container-row btn-area">
+						<button id="cancelBtn" class="cancel-btn"><i class="fa fa-close"></i>&nbsp;取消</button>
+						<button id="confirmBtn" class="confirm-btn"><i class="fa fa-check"></i>&nbsp;确认</button>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="footer">
+				<!-- Powered by kyrieliu -->
+				<i class="fa fa-chrome"> autoLogin</i>
+			</div>
+		</div>
+	</body>
+
+	<script src="./src/js/popup.js"></script>
+</html>
