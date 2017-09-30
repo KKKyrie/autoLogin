@@ -18,12 +18,15 @@
 
 	"content_scripts": [{
 			"matches": ["*://segmentfault.com/*"],
-			"js": ["./src/content_scripts/sf.js"]
+			"js": ["./dist/content_scripts/segmentfault.min.js"]
 		},
-
 		{
 			"matches": ["*://github.com/login"],
-			"js": ["./src/content_scripts/github.js"]
+			"js": ["./dist/content_scripts/github.min.js"]
+		},
+		{
+			"matches": ["*://mp.weixin.qq.com/"],
+			"js": ["./src/content_scripts/mp.js"]
 		}
 	],
 
