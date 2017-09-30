@@ -1,4 +1,3 @@
-console.log('github.com/login');
 console.log('autoLogin：insert script => github.js');
 
 const find = function(selector) {
@@ -10,7 +9,7 @@ const onMessage = chrome.runtime.onMessage;
 
 const accountInput = find('#login_field');
 const passwordInput = find('#password');
-const loginButton = find('#password').nextSibling.nextSibling;
+const loginButton = find('input[name=commit]');
 
 const Page = {
 
