@@ -4,31 +4,26 @@
 	"version": "1.0",
 	"description": "网站自动登录插件",
 	"icons": {
-
+		"19": "images/logo.png",
+		"38": "images/logo.png",
+		"128": "images/logo128.png"
 	},
 
 	"browser_action": {
-		"default_icon": {
-			"19": "images/logo.png",
-			"38": "images/logo.png"
-		},
 		"default_title": "快速登录各种网站",
 		"default_popup": "popup.html"
 	},
 
 	"content_scripts": [{
-			"matches": ["*://segmentfault.com/*"],
-			"js": ["./dist/content_scripts/segmentfault.min.js"]
-		},
-		{
-			"matches": ["*://github.com/login"],
-			"js": ["./dist/content_scripts/github.min.js"]
-		},
-		{
-			"matches": ["*://mp.weixin.qq.com/"],
-			"js": ["./src/content_scripts/mp.js"]
-		}
-	],
+		"matches": ["*://segmentfault.com/*"],
+		"js": ["./dist/content_scripts/segmentfault.min.js"]
+	}, {
+		"matches": ["*://github.com/login*"],
+		"js": ["./dist/content_scripts/github.min.js"]
+	}, {
+		"matches": ["*://mp.weixin.qq.com/"],
+		"js": ["./src/content_scripts/mp.js"]
+	}],
 
 	"background": {
 		"scripts": []

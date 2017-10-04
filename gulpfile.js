@@ -36,27 +36,27 @@ gulp.task('minifyjs', function() {
 });
 
 
-gulp.task('minifyContentjs', function(){
-		let content_scripts = ['github', 'segmentfault', 'mp'];
-		let excute;
-		let length = content_scripts.length;
+gulp.task('minifyContentjs', function() {
+	var content_scripts = ['github', 'segmentfault', 'mp'];
+	var excute;
+	var length = content_scripts.length;
 
-		for (let i = 0; i < length; i++){
-			excute =  gulp.src('./src/content_scripts/' + content_scripts[i] + '.js')
-				.pipe(babel({
-					presets: ['env']
-				}))
-				.pipe(uglify())
-				.pipe(rename({
-					suffix: '.min'
-				}))
-				.pipe(gulp.dest('./dist/content_scripts'))
-				.pipe(notify({
-					message: 'minify content_scripts ' + content_scripts[i] + ' done'
-				}));
-		}
+	for (var i = 0; i < length; i++) {
+		excute = gulp.src('./src/content_scripts/' + content_scripts[i] + '.js')
+			.pipe(babel({
+				presets: ['env']
+			}))
+			.pipe(uglify())
+			.pipe(rename({
+				suffix: '.min'
+			}))
+			.pipe(gulp.dest('./dist/content_scripts'))
+			.pipe(notify({
+				message: 'minify content_scripts ' + content_scripts[i] + ' done'
+			}));
+	}
 
-		return excute;
+	return excute;
 });
 
 
