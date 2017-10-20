@@ -1,2 +1,2 @@
 # Introduction to autoLogin
-[Click here! :smirk:](kyrieliu.cn/autoLogin)
+[Click here! :smirk:](http://kyrieliu.cn/autoLogin)
